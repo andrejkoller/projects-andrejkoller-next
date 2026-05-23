@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --header-height-expanded: 7.5rem;
-  --header-height-collapsed: 5rem;
+  --header-height: 3.5rem;
 
   --background: #000000;
   --foreground: #ffffff;
   --secondary-foreground: #666666;
   --border: #333333;
-  --hover-foreground: #d1d5dc;
+  --hover-foreground: #8f8f8f;
 }
 
 @theme inline {

@@ -10,13 +10,13 @@ export const headerLinksConfig = [
     href: "/projects",
   },
   {
-    key: "Sponsor",
-    label: "Sponsor",
-    href: "/sponsor",
+    key: "sponsors",
+    label: "Sponsors",
+    href: "/sponsors",
   },
   {
-    key: "about",
-    label: "About",
-    href: "/about",
+    key: "blog",
+    label: "Blog",
+    href: "/blog",
   },
 ];

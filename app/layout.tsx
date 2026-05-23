@@ -9,8 +9,9 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Andrej Koller — Apps",
-  description: "A collection of apps built by Andrej Koller.",
+  title: "Andrej Koller — Projects",
+  description:
+    "A collection of completed and in-progress projects by Andrej Koller.",
 };
 
 export default function RootLayout({
