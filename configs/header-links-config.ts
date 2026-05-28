@@ -1,8 +1,13 @@
 export const headerLinksConfig = [
   {
-    key: "apps",
-    label: "Apps",
-    href: "/apps",
+    key: "components",
+    label: "Components",
+    href: "/components",
+  },
+  {
+    key: "blocks",
+    label: "Blocks",
+    href: "/blocks",
   },
   {
     key: "projects",
@@ -10,13 +15,13 @@ export const headerLinksConfig = [
     href: "/projects",
   },
   {
-    key: "sponsors",
-    label: "Sponsors",
-    href: "/sponsors",
-  },
-  {
     key: "blog",
     label: "Blog",
     href: "/blog",
+  },
+  {
+    key: "sponsors",
+    label: "Sponsors",
+    href: "/sponsors",
   },
 ];
