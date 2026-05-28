@@ -2,13 +2,11 @@ import type { Metadata } from "next";
 import { DM_Sans, Noto_Sans, Playfair_Display } from "next/font/google";
 import "./styles/globals.css";
 import ClientLayout from "./client-layout";
+import { cn } from "@/lib/utils";
 
-const playfairDisplayHeading = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-heading",
-});
+const playfairDisplayHeading = Playfair_Display({subsets:['latin'],variable:'--font-heading'});
 
-const notoSans = Noto_Sans({ subsets: ["latin"], variable: "--font-sans" });
+const notoSans = Noto_Sans({subsets:['latin'],variable:'--font-sans'});
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -29,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`antialiased ${dmSans.variable} font-sans ${notoSans.variable} ${playfairDisplayHeading.variable}`}
+      className={cn("antialiased", dmSans.variable, "font-sans", notoSans.variable, playfairDisplayHeading.variable)}
     >
       <body className="min-h-full flex flex-col">
         <ClientLayout>{children}</ClientLayout>

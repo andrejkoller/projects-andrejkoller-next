@@ -14,7 +14,7 @@ export const Header = () => {
             <li key={key} className="inline-block text-sm font-normal">
               <Link
                 href={href}
-                className="hover:text-hover-foreground transition-colors duration-200"
+                className="text-foreground hover:text-(--color-hover-foreground) transition-colors duration-200"
               >
                 {label}
               </Link>

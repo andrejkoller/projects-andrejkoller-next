@@ -1,7 +1,8 @@
 "use client";
 
 import { useTheme } from "@/components/theme/use-theme";
-import { MoonIcon, SunIcon } from "lucide-react";
+import { MoonIcon } from "../ui/moon-icon";
+import { SunIcon } from "../ui/sun-icon";
 
 export const ThemeSwitcher = () => {
   const { theme, toggleTheme, mounted } = useTheme();
@@ -14,10 +15,10 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="bg-transparent text-(--color-text-primary) font-medium uppercase cursor-pointer hover:text-(--color-text-hover) transition-all duration-200 scale-95 rounded border-0 inline-block select-none tracking-wider"
+      className="bg-transparent text-foreground font-medium uppercase cursor-pointer rounded border-0 inline-block select-none"
     >
-      {isDark && <MoonIcon className="size-5" />}
-      {isLight && <SunIcon className="size-5" />}
+      {isDark && <MoonIcon />}
+      {isLight && <SunIcon />}
     </button>
   );
 };
