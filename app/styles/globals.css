@@ -47,18 +47,3 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
-p {
-  color: var(--text-muted);
-  line-height: 1.7;
-}
-
-a {
-  color: var(--text-primary);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--text-hover);
-}
