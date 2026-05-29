@@ -17,6 +17,6 @@ export const headerLinksConfig = [
   {
     key: "contact",
     label: "Contact",
-    href: "/contact",
+    href: "mailto:andrejkoller@outlook.com",
   },
 ];

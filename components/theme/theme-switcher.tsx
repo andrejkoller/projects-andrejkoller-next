@@ -1,8 +1,8 @@
 "use client";
 
 import { useTheme } from "@/components/theme/use-theme";
-import { MoonIcon } from "../ui/moon-icon";
-import { SunIcon } from "../ui/sun-icon";
+import { MoonIcon } from "../icons/moon-icon";
+import { SunIcon } from "../icons/sun-icon";
 
 export const ThemeSwitcher = () => {
   const { theme, toggleTheme, mounted } = useTheme();
