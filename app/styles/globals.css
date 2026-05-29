@@ -2,45 +2,63 @@
 @import "tw-animate-css";
 
 :root {
-  --header-height: 3.5rem;
+  --header-height: 3rem;
 
-  --color-background: 0 0 0;
-  --color-foreground: 255 255 255;
-  
-  --color-muted-foreground: 255 255 255 / 0.2;
-  --color-hover-foreground: 255 255 255 / 0.4;
-  --color-border: 255 255 255 / 0.1;
+  --background: rgb(0, 0, 0);
+  --foreground: rgb(255, 255, 255);
+
+  --text-muted: rgba(255, 255, 255, 0.2);
+  --text-hover: rgba(255, 255, 255, 0.65);
+  --text-primary: rgba(255, 255, 255, 1);
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
 }
 
 [data-theme="light"] {
-  --color-background: 255 255 255;
-  --color-foreground: 0 0 0;
-  
-  --color-muted-foreground: 0 0 0 / 0.2;
-  --color-hover-foreground: 0 0 0 / 0.4;
-  --color-border: 0 0 0 / 0.1;
+  --background: rgb(255, 255, 255);
+  --foreground: rgb(0, 0, 0);
+
+  --text-muted: rgba(0, 0, 0, 0.2);
+  --text-hover: rgba(0, 0, 0, 0.65);
+  --text-primary: rgba(0, 0, 0, 1);
+
+  --border: rgba(0, 0, 0, 0.1);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-text-muted: var(--text-muted);
+  --color-text-hover: var(--text-hover);
+  --color-text-primary: var(--text-primary);
+  --color-border: var(--border);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
 body {
-  background-color: rgb(var(--color-background));
-  color: rgb(var(--color-foreground));
-  font-family: var(--font-sans), sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-mono), monospace;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 p {
-  color: rgb(var(--color-muted-foreground));
+  color: var(--text-muted);
   line-height: 1.7;
 }
 
 a {
-  color: rgb(var(--color-foreground));
+  color: var(--text-primary);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: rgb(var(--color-hover-foreground));
+  color: var(--text-hover);
 }

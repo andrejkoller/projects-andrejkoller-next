@@ -6,9 +6,9 @@ import { ThemeSwitcher } from "./theme/theme-switcher";
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between h-(--header-height) max-w-3xl w-full mx-auto sticky top-0 px-4">
+    <header className="flex items-center justify-between h-(--header-height) max-w-3xl w-full mx-auto border border-border sticky top-0 px-4">
       <div>{/* Logo or site title coming soon */}</div>
-      <div className="flex items-center gap-6">
+      <div className="flex items-center">
         <ul className="flex items-center gap-6">
           {headerLinksConfig.map(({ key, label, href }) => (
             <li key={key} className="inline-block text-sm font-normal">
@@ -21,6 +21,7 @@ export const Header = () => {
             </li>
           ))}
         </ul>
+        <div className="w-px h-4 bg-border self-center mx-4 shrink-0"></div>
         <ThemeSwitcher />
       </div>
     </header>
