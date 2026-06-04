@@ -1,13 +1,13 @@
 export const headerLinksConfig = [
   {
-    key: "projects",
-    label: "Projects",
-    href: "/projects",
+    key: "components",
+    label: "Components",
+    href: "/components",
   },
   {
-    key: "about",
-    label: "About",
-    href: "/about",
+    key: "blocks",
+    label: "Blocks",
+    href: "/blocks",
   },
   {
     key: "blog",
@@ -15,8 +15,8 @@ export const headerLinksConfig = [
     href: "/blog",
   },
   {
-    key: "contact",
-    label: "Contact",
-    href: "mailto:andrejkoller@outlook.com",
+    key: "sponsors",
+    label: "Sponsors",
+    href: "/sponsors",
   },
 ];
