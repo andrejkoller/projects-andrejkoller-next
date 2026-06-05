@@ -9,17 +9,18 @@ export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between h-(--header-height) max-w-3xl w-full mx-auto border border-border sticky top-0 px-4">
+    <header className="flex items-center justify-between h-(--header-height) max-w-3xl w-full mx-auto border-b border-r border-l border-border sticky top-0 px-4">
       <div>{/* Logo or site title coming soon */}</div>
       <div className="flex items-center">
         <ul className="flex items-center gap-6">
-          {headerLinksConfig.map(({ key, label, href }) => (
-            <li key={key} className="inline-block text-sm font-normal">
+          {headerLinksConfig.map((link) => (
+            <li key={link.key} className="inline-block text-sm font-normal">
               <Link
-                href={href}
-                className={`text-(--color-text-muted) hover:text-(--color-text-primary) transition-all duration-200 ${pathname === href ? "text-(--color-text-primary)" : ""}`}
+                href={link.href}
+                className={`text-(--color-text-muted) hover:text-(--color-text-primary) transition-all duration-200 ${pathname === link.href ? "text-(--color-text-primary)" : ""}`}
               >
-                {label}
+                {link.label}
+                <span className="sr-only">{link.screenReaderLabel}</span>
               </Link>
             </li>
           ))}
