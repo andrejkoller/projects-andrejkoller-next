@@ -7,6 +7,8 @@
   --background: rgb(0, 0, 0);
   --foreground: rgb(255, 255, 255);
 
+  --background-hover: rgba(255, 255, 255, 0.05);
+
   --text-muted: rgba(255, 255, 255, 0.2);
   --text-hover: rgba(255, 255, 255, 0.65);
   --text-primary: rgba(255, 255, 255, 1);
@@ -21,6 +23,8 @@
   --background: rgb(255, 255, 255);
   --foreground: rgb(0, 0, 0);
 
+  --background-hover: rgba(0, 0, 0, 0.05);
+
   --text-muted: rgba(0, 0, 0, 0.2);
   --text-hover: rgba(0, 0, 0, 0.65);
   --text-primary: rgba(0, 0, 0, 1);
@@ -31,6 +35,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-background-hover: var(--background-hover);
   --color-text-muted: var(--text-muted);
   --color-text-hover: var(--text-hover);
   --color-text-primary: var(--text-primary);
