@@ -4,22 +4,6 @@
 :root {
   --header-height: 3.5rem;
 
-  --background: rgb(0, 0, 0);
-  --foreground: rgb(255, 255, 255);
-
-  --background-hover: rgba(255, 255, 255, 0.05);
-
-  --text-muted: rgba(255, 255, 255, 0.2);
-  --text-hover: rgba(255, 255, 255, 0.65);
-  --text-primary: rgba(255, 255, 255, 1);
-
-  --border: rgba(255, 255, 255, 0.1);
-
-  --font-sans: "DM Sans", sans-serif;
-  --font-mono: "DM Mono", monospace;
-}
-
-[data-theme="light"] {
   --background: rgb(255, 255, 255);
   --foreground: rgb(0, 0, 0);
 
@@ -30,6 +14,22 @@
   --text-primary: rgba(0, 0, 0, 1);
 
   --border: rgba(0, 0, 0, 0.1);
+
+  --font-sans: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+}
+
+[data-theme="dark"] {
+  --background: rgb(0, 0, 0);
+  --foreground: rgb(255, 255, 255);
+
+  --background-hover: rgba(255, 255, 255, 0.05);
+
+  --text-muted: rgba(255, 255, 255, 0.2);
+  --text-hover: rgba(255, 255, 255, 0.65);
+  --text-primary: rgba(255, 255, 255, 1);
+
+  --border: rgba(255, 255, 255, 0.1);
 }
 
 @theme inline {
