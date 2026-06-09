@@ -38,9 +38,9 @@ export const BackToTop = () => {
       onClick={scrollToTop}
       aria-label="Back to top"
       style={{ opacity, transition: "opacity 0.3s ease" }}
-      className="fixed bottom-6 right-8 z-50 flex items-center justify-center w-10 h-10 rounded-md border border-border bg-background text-foreground cursor-pointer hover:opacity-100"
+      className="fixed bottom-6 right-8 z-50 flex items-center justify-center w-8 h-8 rounded-md border border-border bg-background text-foreground cursor-pointer hover:opacity-100"
     >
-      <ArrowUp size={18} />
+      <ArrowUp size={20} />
     </button>
   );
 };
