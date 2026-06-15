@@ -9,7 +9,7 @@ export const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex items-center justify-between h-(--header-height) max-w-3xl w-full mx-auto bg-(--color-background) border-b border-r border-l border-border sticky top-0 px-4">
+    <header className="screen-line-bottom flex items-center justify-between h-(--header-height) max-w-3xl w-full mx-auto bg-(--color-background) sticky top-0 z-10 px-4">
       <div>{/* Logo or site title coming soon */}</div>
       <div className="flex items-center">
         <ul className="flex items-center gap-6">

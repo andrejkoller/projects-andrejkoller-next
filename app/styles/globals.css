@@ -51,4 +51,31 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.screen-line-top:before {
+  content: "";
+  z-index: -1;
+  background-color: var(--border);
+  width: 200vw;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+}
+
+.screen-line-bottom:after {
+  content: "";
+  z-index: -1;
+  background-color: var(--border);
+  width: 200vw;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: -100vw;
+}
+
+.link {
+  @apply underline underline-offset-2 decoration-border hover:decoration-foreground hover:text-text-primary transition-colors;
 }

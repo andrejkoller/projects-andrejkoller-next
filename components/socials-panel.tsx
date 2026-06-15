@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const SocialsPanel = () => {
   return (
-    <div className="p-4 w-full">
+    <section className="screen-line-bottom relative p-4 w-full">
       <ul className="flex flex-wrap gap-2">
         {socialsConfig.map((social) => {
           const Icon = social.icon;
@@ -24,6 +24,6 @@ export const SocialsPanel = () => {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 };
