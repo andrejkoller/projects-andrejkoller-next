@@ -12,11 +12,6 @@ export const DescriptionPanel = () => {
             a strong focus on usability, consistency, and attention to detail.
           </li>
           <li className="pl-1.5 my-2">
-            I enjoy identifying patterns, understanding complex relationships,
-            and transforming ideas into elegant interfaces that balance
-            aesthetics with functionality.
-          </li>
-          <li className="pl-1.5 my-2">
             Constantly exploring new technologies, frameworks, and creative
             tools, I&apos;m driven by a passion for continuous learning and
             building meaningful projects.
