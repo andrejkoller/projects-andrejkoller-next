@@ -14,7 +14,7 @@ export const SocialsPanel = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex size-8 items-center justify-center rounded-md border border-border hover:bg-background-hover [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:text-foreground [&_svg:not([class*='size-'])]:size-5"
+                className="flex size-8 items-center justify-center rounded-md border border-(--color-border) hover:bg-(--color-background-hover) [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:text-(--color-foreground) [&_svg:not([class*='size-'])]:size-5"
                 aria-label={social.screenReaderLabel}
               >
                 <Icon />

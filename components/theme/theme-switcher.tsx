@@ -15,7 +15,7 @@ export const ThemeSwitcher = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="bg-transparent text-foreground font-medium uppercase cursor-pointer rounded border-0 inline-block select-none"
+      className="bg-transparent text-(--color-primary) font-medium uppercase cursor-pointer rounded border-0 inline-block select-none"
     >
       {isDark && <MoonIcon />}
       {isLight && <SunIcon />}
